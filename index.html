@@ -3,114 +3,63 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Privacy policy for Biscuit & Bramble, a personalized pet keepsake shop on Etsy, and its Pinterest scheduling app.">
-<title>Biscuit & Bramble Privacy Policy</title>
+<meta name="description" content="Biscuit & Bramble makes personalized keepsakes for pets: ornaments and portraits with your pet's name, printed to order in the USA. Sold on Etsy.">
+<title>Biscuit & Bramble</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
-  /* Layout: one quiet reading column, a small brand mark, section headings as the only hierarchy. */
   :root {
-    --bg: #fbf8f2;
-    --fg: #2b3a2e;
-    --muted: #6b7569;
-    --rule: #d9d3c6;
-    --accent: #8a2f3a;
-    --soft: #f1ebe0;
+    --bg: #fbf8f2; --fg: #2b3a2e; --muted: #6b7569; --rule: #d9d3c6; --accent: #8a2f3a; --soft: #f1ebe0; --green: #3f5a45;
     --display: "Fraunces", Georgia, "Times New Roman", serif;
     --body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #1c201d; --fg: #e8e4da; --muted: #a3a89c; --rule: #3a403b; --accent: #d98a94; --soft: #262b27; color-scheme: dark;
-    }
+    :root { --bg: #1c201d; --fg: #e8e4da; --muted: #a3a89c; --rule: #3a403b; --accent: #d98a94; --soft: #262b27; --green: #9cb8a3; color-scheme: dark; }
   }
-  :root[data-theme="dark"] {
-    --bg: #1c201d; --fg: #e8e4da; --muted: #a3a89c; --rule: #3a403b; --accent: #d98a94; --soft: #262b27; color-scheme: dark;
-  }
-  body {
-    background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6;
-    padding-block: 40px 72px;
-    padding-left: max(16px, env(safe-area-inset-left, 0px));
-    padding-right: max(16px, env(safe-area-inset-right, 0px));
-  }
-  main { max-width: 42rem; margin: 0 auto; }
-  .brand { font-family: var(--display); font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; color: var(--accent); }
-  .brand small { display: block; font-family: var(--body); font-weight: 400; font-size: 0.8rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 2px; }
-  h1 { font-family: var(--display); font-weight: 500; font-size: 2.1rem; line-height: 1.15; margin: 28px 0 6px; text-wrap: balance; }
-  .meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 28px; }
-  h2 { font-family: var(--display); font-weight: 600; font-size: 1.3rem; margin: 36px 0 10px; padding-top: 18px; border-top: 1px solid var(--rule); text-wrap: balance; }
-  p { margin: 0 0 14px; }
-  ul { margin: 0 0 14px; padding-left: 1.2rem; }
-  li { margin-bottom: 6px; }
-  .note { background: var(--soft); border-left: 3px solid var(--accent); padding: 12px 16px; margin: 0 0 18px; font-size: 0.98rem; }
-  .contact { display: grid; gap: 4px; margin: 0 0 14px; }
-  .contact span { color: var(--muted); font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; }
-  a { color: var(--accent); }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  @media (max-width: 480px) { h1 { font-size: 1.7rem; } body { font-size: 16px; } }
+  html, body { margin: 0; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6; padding: 56px 16px 72px; }
+  main { max-width: 40rem; margin: 0 auto; text-align: center; }
+  .wreath { width: 120px; height: 120px; margin: 0 auto 20px; display: block; }
+  h1 { font-family: var(--display); font-weight: 500; font-size: 2.6rem; line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .tag { font-family: var(--display); font-style: italic; color: var(--muted); font-size: 1.15rem; margin: 0 0 28px; }
+  p { margin: 0 auto 16px; max-width: 34rem; }
+  .cta { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; padding: 14px 28px; border-radius: 999px; margin: 12px 0 36px; font-size: 1.05rem; }
+  .cta:hover, .cta:focus-visible { filter: brightness(1.1); outline: none; }
+  .items { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin: 0 0 40px; text-align: left; }
+  .item { background: var(--soft); border-radius: 10px; padding: 14px 16px; }
+  .item b { display: block; font-family: var(--display); font-weight: 600; margin-bottom: 4px; }
+  .item span { color: var(--muted); font-size: 0.95rem; }
+  footer { border-top: 1px solid var(--rule); padding-top: 18px; color: var(--muted); font-size: 0.92rem; }
+  footer a { color: var(--accent); }
+  @media (max-width: 480px) { h1 { font-size: 2rem; } body { font-size: 16px; padding-top: 40px; } }
 </style>
-<style>html,body{margin:0}img{max-width:100%}</style>
 </head>
 <body>
 <main>
-  <div class="brand">Biscuit &amp; Bramble<small>Keepsakes for the ones with fur</small></div>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Effective October 21, 2026. Westhampton, New York, United States.</p>
-
-  <p>Biscuit &amp; Bramble is a small shop that sells personalized pet keepsakes through Etsy. This policy explains what information we handle, why, and for how long. It covers three things: orders placed in our Etsy shop, our own software that schedules posts to Pinterest, and the social accounts where we share our designs.</p>
-
-  <div class="note">The short version: we collect only what is needed to make and ship your order, we never sell or share your information for marketing, and the software we use to post to Pinterest touches only our own account.</div>
-
-  <h2>1. Orders placed through Etsy</h2>
-  <p>When you buy from us on Etsy, Etsy collects your name, shipping address, payment details and any personalization you type in. Etsy's handling of that information is governed by <a href="https://www.etsy.com/legal/privacy">Etsy's Privacy Policy</a>. We never see your payment details.</p>
-  <p>To make your order, we receive from Etsy:</p>
-  <ul>
-    <li>Your name and shipping address, so the item can be shipped to you.</li>
-    <li>The personalization you entered, such as your pet's name, coat color or a year.</li>
-    <li>For photo-portrait items, the photos you upload of your pet.</li>
-  </ul>
-  <p>We use this information only to make and ship your order and to answer questions about it. Shipping details are passed to our production partner, Printify (North Las Vegas, Nevada), which prints and ships the item. Printify's handling of that information is governed by <a href="https://printify.com/legal/privacy-policy/">Printify's Privacy Policy</a>.</p>
-
-  <h2>2. Pet photos for portrait items</h2>
-  <p>If you order a portrait made from your pet's photo, we use the photo only to create your portrait. The photo is used as a reference by the image tools that draw the illustration, and the illustration is reviewed by a person before it is printed. Your photo is not used to train any system, is not posted anywhere, and is not used for any other order.</p>
-  <p>Photos are kept for 60 days after your order ships, in case a reprint is needed, and are then deleted.</p>
-
-  <h2>3. Our Pinterest scheduling software</h2>
-  <p>We run a small private program, used only by the shop owner, that posts pins about our own products to our own Pinterest boards. If you reached this page from Pinterest's developer portal, this is the section that describes that program.</p>
-  <ul>
-    <li><strong>What it does:</strong> it creates pins on boards belonging to the Biscuit &amp; Bramble Pinterest account, using images and text the shop owner wrote and approved.</li>
-    <li><strong>Whose data it uses:</strong> only the shop's own account. It does not read, store or analyze information about any other Pinterest user, and it has no users other than the shop owner.</li>
-    <li><strong>What it stores:</strong> an access token for the shop's own account, kept on the owner's computer, and a record of which pins it has created. Nothing else.</li>
-    <li><strong>What it never does:</strong> it does not follow, message or interact with other accounts, and it does not collect data from Pinterest for any purpose other than confirming its own pins were created.</li>
-  </ul>
-
-  <h2>4. Social media</h2>
-  <p>We share our designs on Pinterest and TikTok. If you interact with those posts, that interaction is governed by each platform's own privacy policy. We do not collect information from those platforms about the people who view or interact with our posts.</p>
-
-  <h2>5. Information we do not collect</h2>
-  <p>We do not run a website that sets cookies or tracks visitors, we do not keep a mailing list, and we do not buy, sell or trade personal information. We do not knowingly collect information from children under 13.</p>
-
-  <h2>6. How long we keep information</h2>
-  <ul>
-    <li>Order details (name, address, personalization): as long as Etsy keeps the order in our shop records, which we rely on for returns and reprints.</li>
-    <li>Pet photos: 60 days after shipping, then deleted.</li>
-    <li>Pinterest access token: until it expires or the program is retired.</li>
-  </ul>
-
-  <h2>7. Your choices</h2>
-  <p>You can ask us to delete your pet's photos sooner than 60 days, or to tell you what information we hold about your order. Message us through our Etsy shop and we will respond within a few days. Requests about information held by Etsy, Printify, Pinterest or TikTok should go to those companies directly.</p>
-
-  <h2>8. Changes to this policy</h2>
-  <p>If we change how we handle information, we will update this page and the effective date at the top.</p>
-
-  <h2>9. Contact</h2>
-  <div class="contact">
-    <span>Shop</span>
-    <a href="https://www.etsy.com/shop/BiscuitAndBramble">etsy.com/shop/BiscuitAndBramble</a>
-    <span>Message us</span>
-    <a href="https://www.etsy.com/messages/new?with_id=917814812">Send a message through Etsy</a>
+  <svg class="wreath" viewBox="0 0 120 120" aria-hidden="true">
+    <circle cx="60" cy="60" r="44" fill="none" stroke="var(--green)" stroke-width="6" stroke-dasharray="14 9" stroke-linecap="round"/>
+    <circle cx="60" cy="16" r="5" fill="var(--accent)"/>
+    <circle cx="98" cy="38" r="4" fill="var(--accent)"/>
+    <circle cx="22" cy="38" r="4" fill="var(--accent)"/>
+    <circle cx="60" cy="104" r="5" fill="var(--accent)"/>
+    <ellipse cx="60" cy="62" rx="9" ry="8" fill="var(--green)"/>
+    <circle cx="48" cy="52" r="4.5" fill="var(--green)"/>
+    <circle cx="56" cy="47" r="4.5" fill="var(--green)"/>
+    <circle cx="64" cy="47" r="4.5" fill="var(--green)"/>
+    <circle cx="72" cy="52" r="4.5" fill="var(--green)"/>
+  </svg>
+  <h1>Biscuit &amp; Bramble</h1>
+  <p class="tag">Keepsakes for the ones with fur</p>
+  <p>Personalized ornaments and portraits for dogs, cats and horses, each printed with your pet's name. Designed in Westhampton, New York and printed to order in the USA.</p>
+  <a class="cta" href="https://www.etsy.com/shop/BiscuitAndBramble">Shop on Etsy</a>
+  <div class="items">
+    <div class="item"><b>Breed ornaments</b><span>Pit bull, Siamese, orange cat, horse, in six coat colors</span></div>
+    <div class="item"><b>First Christmas</b><span>Puppy's and Kitten's First Christmas, with the year</span></div>
+    <div class="item"><b>Photo portraits</b><span>An illustrated portrait made from your pet's photo</span></div>
+    <div class="item"><b>Memorials</b><span>Two-sided ornaments with name and years</span></div>
   </div>
-  <p>Biscuit &amp; Bramble is owned and operated by Carter Padavan, Westhampton, New York.</p>
+  <footer>
+    <a href="privacy.html">Privacy policy</a> &nbsp;·&nbsp; <a href="https://www.etsy.com/shop/BiscuitAndBramble">etsy.com/shop/BiscuitAndBramble</a>
+  </footer>
 </main>
-
 </body>
 </html>
